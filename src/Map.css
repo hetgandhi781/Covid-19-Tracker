@@ -1,0 +1,47 @@
+.map{
+    height: 500px;
+    background-color: #000000 !important;
+    background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png") !important;
+    padding: 1rem;
+    border-radius: 20px;
+    margin-top: 16px;
+    box-shadow: 0 0 8px -4px rgba(0,0,0,0.5);
+}
+
+.map .leaflet-container{
+    height: 100%;
+}
+
+.info_flag{
+    height: 80px;
+    width: 100%;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.info_flag img{
+    width: 100px;
+    border-radius: 5px;
+}
+.info_confirmed,
+.info_recovered,
+.info_deaths{
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.info_container{
+    width: 150px;
+}
+
+.info_name{
+    font-size: 20px;
+    font-weight: bold;
+    color:#555;
+}
+
+@media (max-width: 990px){
+    .map{
+        height: 400px !important;
+    }
+}

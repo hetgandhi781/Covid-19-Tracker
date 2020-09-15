@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  color:white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__left{
+  flex: 0.9;
+}
+
+.app__header{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.app__header >h1{
+  color: #fc3c3c;
+  font-size: 2rem;
+}
+
+.app__stats{
+  display: flex;
+  justify-content: space-between;
+}
+.app__dropdown .MuiInputBase-root{
+  color: white !important;
+  background-color: #000000 !important;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png") !important;
+  border-radius: 10px !important;
+}
+.app__right{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width:30%;
+  background-color: #000000 !important;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png") !important;
+  color:white !important;
 }
 
-.App-link {
-  color: #61dafb;
+.app__rightChild{
+  color: white !important;
+  background-color: #000000 !important;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png") !important;
+  border-radius: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.app__rightChild1{
+  color: white !important;
+  background-color: #000000 !important;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png") !important;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.app__right .MuiCardContent-root{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.app__graph{
+  flex-grow: 1;
+  background-color:white;
+  color:black;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
+.app__tableTitla{
+  font-size: 1.5rem;
+}
+
+.app__graphTitle{
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 990px) {
+  .App{
+    flex-direction: column;
+    width:90%;
+    margin: auto;
   }
-  to {
-    transform: rotate(360deg);
+  .app__right{
+    margin-top: 20px;
+    width: 100%;
+  }
+  .app__graphTitle{
+    text-align: center;
+  }
+  .app__tableTitla{
+    text-align: center;
+  }
+}
+
+.blink{
+  animation:blink 0.5s linear infinite;
+  border: 1px solid red;
+  color: red;
+  padding: 3px;
+}
+
+@keyframes blink{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
   }
 }

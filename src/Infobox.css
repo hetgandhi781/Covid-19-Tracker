@@ -1,0 +1,66 @@
+.infobox{
+    flex:1;
+    cursor: pointer;
+    /* background-color:#3e432e !important; */
+    color: white !important;
+    background-color: #000000 !important;
+    background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png") !important;
+    border-radius: 10px !important;
+}
+
+.infobox:not(:last-child){
+    margin-right: 15px;
+}
+
+.infobox__cases{
+    color: red;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.infobox__total{
+    color: white !important;
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+    margin-top: 15px !important;
+}
+.infobox__title{
+    color: white !important;
+    font-size: 1.5rem !important;
+}
+
+.infobox--selected{
+    border-bottom:10px solid;
+    border-top:10px solid;
+}
+
+.infobox--red{
+    border-color: red;
+}
+.infobox--green{
+    border-color: #7dd71d;
+}
+.infobox--blue{
+    border-color: #07689f;
+}
+
+.infobox--cases--green{
+    color: #7dd71d !important;
+}
+.infobox--cases--blue{
+    color: #07689f !important;
+}
+.infobox--cases--red{
+    color: red !important;
+}
+
+@media (max-width: 990px){
+    .infobox__title{
+        font-size: 1rem !important;
+    }
+    .infobox__cases{
+        font-size: 1.5rem !important;
+    }
+}
